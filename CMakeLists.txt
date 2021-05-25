@@ -17,8 +17,8 @@ include_directories(${gtest_SOURCE_DIR}/include)
 
 
 set(FROST_FRUIT_SOURCE_FILES
-        Frostfruit.cc
-        Frostfruit.h
+        src/Frostfruit.cc
+        include/Frostfruit.h
 		#IItem.h
         #NormalItem.h
         #CheeseItem.h
@@ -28,14 +28,14 @@ set(FROST_FRUIT_SOURCE_FILES
 
 set(FROST_FRUIT_UNIT_TESTS_SOURCE_FILES
         ${FROST_FRUIT_SOURCE_FILES}
-        FrostfruitUnitTests.cc)
+        tests/FrostfruitUnitTests.cc)
 
 #set(SOURCE_FILES
 #        ${FROST_FRUIT_SOURCE_FILES}
 #        ${FROST_FRUIT_TEXT_TESTS_SOURCE_FILES})
 
 add_subdirectory(${gtest_SOURCE_DIR} ${gtest_SOURCE_DIR}/bin EXCLUDE_FROM_ALL)
-add_executable(Frostfruit ${FROST_FRUIT_SOURCE_FILES} FrostfruitMain.cc)
+add_executable(Frostfruit ${FROST_FRUIT_SOURCE_FILES} src/FrostfruitMain.cc)
 
 #target_link_libraries(Frostfruit gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})
 #target_link_libraries(Frostfruit gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})

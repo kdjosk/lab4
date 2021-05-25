@@ -2,11 +2,11 @@
 #include <streambuf>
 #include <gtest/gtest.h>
 
-#include "CheeseItem.h"
-#include "ConcertTicketItem.h"
-#include "Frostfruit.h"
-#include "NormalItem.h"
-#include "LegolasItem.h"
+#include "../include/CheeseItem.h"
+#include "../include/ConcertTicketItem.h"
+#include "../include/Frostfruit.h"
+#include "../include/NormalItem.h"
+#include "../include/LegolasItem.h"
 
 std::string readGroundtruth(const std::string& filename)
 {
