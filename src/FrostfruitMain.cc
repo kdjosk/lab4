@@ -14,8 +14,6 @@ int main() {
   app.addItem(new ConcertTicketItem("ticket", 10, 20));
   app.addItem(new LegolasItem("legolas", 10, 20));
 
-  cout << "HAHAHA!" << endl;
-
   app.updateQuality();
   app.printItems();
 }
