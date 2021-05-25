@@ -19,6 +19,7 @@ class IItem
     int getQuality() const { return quality_; };
     int getDaysRemaining() const { return days_remaining_; };
     std::string getName() const { return name_; };
+    friend std::ostream &operator<<(std::ostream &s, IItem &item);
 
     virtual void update() = 0;
 
