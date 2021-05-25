@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "Frostfruit.h"
+#include "../include/Frostfruit.h"
 
 TEST(FrostfruitTest, Foo) {
 
