@@ -38,7 +38,7 @@ add_subdirectory(${gtest_SOURCE_DIR} ${gtest_SOURCE_DIR}/bin EXCLUDE_FROM_ALL)
 add_executable(Frostfruit ${FROST_FRUIT_SOURCE_FILES} src/FrostfruitMain.cc)
 
 add_executable(FrostfruitUnitTests ${FROST_FRUIT_UNIT_TESTS_SOURCE_FILES})
-target_link_libraries(FrostfruitUnitTests gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(FrostfruitUnitTests gmock gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})
 
 
 set(FROST_FRUIT_CHARACTERIZATION_TESTS_SOURCE_FILES
