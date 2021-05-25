@@ -37,28 +37,14 @@ set(FROST_FRUIT_UNIT_TESTS_SOURCE_FILES
 add_subdirectory(${gtest_SOURCE_DIR} ${gtest_SOURCE_DIR}/bin EXCLUDE_FROM_ALL)
 add_executable(Frostfruit ${FROST_FRUIT_SOURCE_FILES} src/FrostfruitMain.cc)
 
-#target_link_libraries(Frostfruit gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})
-#target_link_libraries(Frostfruit gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})
-#target_link_libraries(Frostfruit gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})
-#target_link_libraries(Frostfruit gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})
-#target_link_libraries(Frostfruit gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})
-#target_link_libraries(Frostfruit gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})
-#target_link_libraries(Frostfruit gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})
-
 add_executable(FrostfruitUnitTests ${FROST_FRUIT_UNIT_TESTS_SOURCE_FILES})
 target_link_libraries(FrostfruitUnitTests gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})
 
 
-
-#set(FROST_FRUIT_CHARACTERIZATION_TESTS_SOURCE_FILES
-#        ${FROST_FRUIT_SOURCE_FILES}
-#        FrostfruitCharacterizationTests.cc)
-
-#set(SOURCE_FILES
-#        ${ABC_SOURCE_FILES}
-#        ${CDE_TEXT_TESTS_SOURCE_FILES})
+set(FROST_FRUIT_CHARACTERIZATION_TESTS_SOURCE_FILES
+       ${FROST_FRUIT_SOURCE_FILES}
+       tests/FrostfruitCharacterizationTests.cc)
 
 
-
-#add_executable(FrostfruitCharacterizationTests ${FROST_FRUIT_CHARACTERIZATION_TESTS_SOURCE_FILES})
-#target_link_libraries(FrostfruitCharacterizationTests gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})
+add_executable(FrostfruitCharacterizationTests ${FROST_FRUIT_CHARACTERIZATION_TESTS_SOURCE_FILES})
+target_link_libraries(FrostfruitCharacterizationTests gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})
