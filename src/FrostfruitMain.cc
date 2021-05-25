@@ -9,6 +9,8 @@ using namespace std;
 int main() {
   Frostfruit app;
 
+  //app.addItem(ItemPointer{new NormalItem("+7 Yellow Vest", 10, 20)});
+
   app.addItem(new NormalItem("+7 Yellow Vest", 10, 20));
   app.addItem(new CheeseItem("cheese", 10, 20));
   app.addItem(new ConcertTicketItem("ticket", 10, 20));
@@ -17,5 +19,6 @@ int main() {
   cout << "HAHAHA!" << endl;
 
   app.updateQuality();
+
   app.printItems();
 }
