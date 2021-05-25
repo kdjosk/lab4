@@ -9,6 +9,9 @@ std::string EMPTY_STRING = "";
 class MockItem : public IItem{
   public:
   MOCK_METHOD0(update, void());
+  MOCK_CONST_METHOD0(getName, std::string());
+  MOCK_CONST_METHOD0(getDaysRemaining, int());
+  MOCK_CONST_METHOD0(getQuality, int());
 }
 
 TEST(FrostfruitTest, newIsEmpty) {
@@ -34,14 +37,19 @@ TEST(FrostfruitTest, updateQuality) {
 
   Frostfruit app = Frostfruit();
   std::stringstream output;
-  // TODO(kdjosk) Mock item so the test doesn't depend on it
   ItemPointer item = ItemPointer{new MockItem()};
+
+  EXPECT_CALL(*item, update()).Times(1);
+  EXPECT_CALL(*item, getName()).WillOnce(Return("+7 Yellow Vest"));
+  EXPECT_CALL(*item, getDaysRemaining()).WillOnce(Return(2));
+  EXPECT_CALL(*item, getQuality()).Times(1).WillOnce(Return(2));
+
   app.addItem(item);
   app.updateQuality();
   app.printItems(output);
 
-  EXPECT_CALL(item, update()).Times(1)
 
-  EXPECT_TRUE(output.str()), "+7 Yellow Vest, 9, 19");
+
+  EXPECT_TRUE(output.str()), "+7 Yellow Vest, 2, 2");
 }
 
