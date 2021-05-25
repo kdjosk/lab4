@@ -1,0 +1,125 @@
+Day is 0
++7 Yellow Vest, 9, 19
+Cheese Brie, 9, 21
+Tickets to a concert, 9, 22
+Legolas, Hand of Gollum, 10, 20
+
+Day is 1
++7 Yellow Vest, 8, 18
+Cheese Brie, 8, 22
+Tickets to a concert, 8, 24
+Legolas, Hand of Gollum, 10, 20
+
+Day is 2
++7 Yellow Vest, 7, 17
+Cheese Brie, 7, 23
+Tickets to a concert, 7, 26
+Legolas, Hand of Gollum, 10, 20
+
+Day is 3
++7 Yellow Vest, 6, 16
+Cheese Brie, 6, 24
+Tickets to a concert, 6, 28
+Legolas, Hand of Gollum, 10, 20
+
+Day is 4
++7 Yellow Vest, 5, 15
+Cheese Brie, 5, 25
+Tickets to a concert, 5, 30
+Legolas, Hand of Gollum, 10, 20
+
+Day is 5
++7 Yellow Vest, 4, 14
+Cheese Brie, 4, 26
+Tickets to a concert, 4, 33
+Legolas, Hand of Gollum, 10, 20
+
+Day is 6
++7 Yellow Vest, 3, 13
+Cheese Brie, 3, 27
+Tickets to a concert, 3, 36
+Legolas, Hand of Gollum, 10, 20
+
+Day is 7
++7 Yellow Vest, 2, 12
+Cheese Brie, 2, 28
+Tickets to a concert, 2, 39
+Legolas, Hand of Gollum, 10, 20
+
+Day is 8
++7 Yellow Vest, 1, 11
+Cheese Brie, 1, 29
+Tickets to a concert, 1, 42
+Legolas, Hand of Gollum, 10, 20
+
+Day is 9
++7 Yellow Vest, 0, 10
+Cheese Brie, 0, 30
+Tickets to a concert, 0, 45
+Legolas, Hand of Gollum, 10, 20
+
+Day is 10
++7 Yellow Vest, -1, 8
+Cheese Brie, -1, 32
+Tickets to a concert, -1, 0
+Legolas, Hand of Gollum, 10, 20
+
+Day is 11
++7 Yellow Vest, -2, 6
+Cheese Brie, -2, 34
+Tickets to a concert, -2, 0
+Legolas, Hand of Gollum, 10, 20
+
+Day is 12
++7 Yellow Vest, -3, 4
+Cheese Brie, -3, 36
+Tickets to a concert, -3, 0
+Legolas, Hand of Gollum, 10, 20
+
+Day is 13
++7 Yellow Vest, -4, 2
+Cheese Brie, -4, 38
+Tickets to a concert, -4, 0
+Legolas, Hand of Gollum, 10, 20
+
+Day is 14
++7 Yellow Vest, -5, 0
+Cheese Brie, -5, 40
+Tickets to a concert, -5, 0
+Legolas, Hand of Gollum, 10, 20
+
+Day is 15
++7 Yellow Vest, -6, 0
+Cheese Brie, -6, 42
+Tickets to a concert, -6, 0
+Legolas, Hand of Gollum, 10, 20
+
+Day is 16
++7 Yellow Vest, -7, 0
+Cheese Brie, -7, 44
+Tickets to a concert, -7, 0
+Legolas, Hand of Gollum, 10, 20
+
+Day is 17
++7 Yellow Vest, -8, 0
+Cheese Brie, -8, 46
+Tickets to a concert, -8, 0
+Legolas, Hand of Gollum, 10, 20
+
+Day is 18
++7 Yellow Vest, -9, 0
+Cheese Brie, -9, 48
+Tickets to a concert, -9, 0
+Legolas, Hand of Gollum, 10, 20
+
+Day is 19
++7 Yellow Vest, -10, 0
+Cheese Brie, -10, 50
+Tickets to a concert, -10, 0
+Legolas, Hand of Gollum, 10, 20
+
+Day is 20
++7 Yellow Vest, -11, 0
+Cheese Brie, -11, 50
+Tickets to a concert, -11, 0
+Legolas, Hand of Gollum, 10, 20
