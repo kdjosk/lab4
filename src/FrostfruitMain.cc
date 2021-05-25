@@ -15,5 +15,6 @@ int main() {
   app.addItem(new LegolasItem("legolas", 10, 20));
 
   app.updateQuality();
+
   app.printItems();
 }
