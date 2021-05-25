@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "../include/IItem.h"
 
 using namespace std;
 
@@ -24,11 +25,13 @@ private:
 class Frostfruit {
 public:
   void printItems();
-  void addItem(const Item &item);
+  void addItem(IItem* item);
   void updateQuality();
+  ~Frostfruit();
+
 
 private:
-  vector<Item> items_;
+  vector<IItem*> items_;
 };
 
 const std::string item1 = "Aged Cheese";
