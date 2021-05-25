@@ -1,5 +1,4 @@
-#include <gtest/gtest.h>
-#include <gmock/gmock.h>
+#include "gmock/gmock.h"
 #include <streambuf>
 #include "../include/Frostfruit.h"
 #include "../include/NormalItem.h"
@@ -12,7 +11,7 @@ class MockItem : public IItem{
   MOCK_CONST_METHOD0(getName, std::string());
   MOCK_CONST_METHOD0(getDaysRemaining, int());
   MOCK_CONST_METHOD0(getQuality, int());
-}
+};
 
 TEST(FrostfruitTest, newIsEmpty) {
 
@@ -34,6 +33,7 @@ TEST(FrostfruitTest, addItem) {
 }
 
 TEST(FrostfruitTest, updateQuality) {
+  InitGoogleMock(&__argc, __argv)
 
   Frostfruit app = Frostfruit();
   std::stringstream output;
@@ -50,6 +50,6 @@ TEST(FrostfruitTest, updateQuality) {
 
 
 
-  EXPECT_TRUE(output.str()), "+7 Yellow Vest, 2, 2");
+  EXPECT_EQ(output.str(), "+7 Yellow Vest, 2, 2");
 }
 

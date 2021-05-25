@@ -16,15 +16,14 @@ std::string readGroundtruth(const std::string& filename)
     return s.str();
 };
 
-/*
 TEST(FrostfruitCharacterizationTest, Foo)
 {
     Frostfruit app;
 
-    app.addItem(ItemPointer{new NormalItem("+7 Yellow Vest", 10, 20)});
-    app.addItem(ItemPointer{new CheeseItem("Cheese Brie", 10, 20)});
-    app.addItem(ItemPointer{new ConcertTicketItem("Tickets to a concert", 10, 20)});
-    app.addItem(ItemPointer{new LegolasItem("Legolas, Hand of Gollum", 10, 20)});
+    app.addItem(new NormalItem("+7 Yellow Vest", 10, 20));
+    app.addItem(new CheeseItem("Cheese Brie", 10, 20));
+    app.addItem(new ConcertTicketItem("Tickets to a concert", 10, 20));
+    app.addItem(new LegolasItem("Legolas, Hand of Gollum", 10, 20));
 
     std::stringstream output;
 
@@ -33,11 +32,12 @@ TEST(FrostfruitCharacterizationTest, Foo)
         output << "Day is " << day << std::endl;
         app.updateQuality();
         app.printItems(output);
-        output << std::endl;
+        if (day < 20) {
+          output << std::endl;
+        }
     }
 
-    std::string groundtruth = readGroundtruth("ExpectedTestOutputs.txt");
-
+    std::string groundtruth = readGroundtruth("../ExpectedTestOutput.txt");
+ 
     EXPECT_EQ(groundtruth, output.str());
 }
-*/
