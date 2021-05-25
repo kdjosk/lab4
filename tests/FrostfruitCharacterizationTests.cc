@@ -28,7 +28,7 @@ TEST(FrostfruitCharacterizationTest, Foo)
 
     std::stringstream output;
 
-    for (int day = 0; day < 5; ++day)
+    for (int day = 0; day < 21; ++day)
     {
         output << "Day is " << day << std::endl;
         app.updateQuality();
