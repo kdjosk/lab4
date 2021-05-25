@@ -20,10 +20,10 @@ TEST(FrostfruitCharacterizationTest, Foo)
 {
     Frostfruit app;
 
-    app.addItem(NormalItem("+7 Yellow Vest", 10, 20));
-    app.addItem(CheeseItem("Cheese Brie", 10, 20));
-    app.addItem(ConcertTicketItem("Tickets to a concert", 10, 20));
-    app.addItem(LegolasItem("Legolas, Hand of Gollum", 10, 20));
+    app.addItem(ItemPointer{new NormalItem("+7 Yellow Vest", 10, 20)});
+    app.addItem(ItemPointer{new CheeseItem("Cheese Brie", 10, 20)});
+    app.addItem(ItemPointer{new ConcertTicketItem("Tickets to a concert", 10, 20)});
+    app.addItem(ItemPointer{new LegolasItem("Legolas, Hand of Gollum", 10, 20)});
 
     std::stringstream output;
 
